@@ -1,0 +1,9 @@
+<div class="container">
+    <form #saveform=ngForm (ngSubmit)="savedata(saveform.value)" >
+        Name:<input type="text" name="name" ngModel><br>
+        Email:<input type="text" name="email" ngModel><br>
+        Password:<input type="text" name="password" ngModel><br>
+        <input type="submit" value="register">
+    </form>
+
+</div>

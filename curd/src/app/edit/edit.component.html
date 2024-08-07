@@ -1,0 +1,9 @@
+<div class="container">
+    <form #saveform=ngForm (ngSubmit)="updatedata(saveform.value)">
+        <input type="hidden" name="id" ngModel [value]="obj.id" [(ngModel)]="obj.id">
+    name:<input type="text" name="name" ngModel [value]="obj.name" [(ngModel)]="obj.name"><br>
+    Email:<input type="text" name="email" ngModel [value]="obj.email" [(ngModel)]="obj.email"><br>
+    Password:<input type="text" name="password" ngModel [value]="obj.password" [(ngModel)]="obj.password"><br>
+    <input type="submit" value="update">
+</form>
+</div>

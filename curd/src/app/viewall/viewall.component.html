@@ -1,0 +1,19 @@
+<div class="container">
+    <table class="table ">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        <tr *ngFor="let s of ary">
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.email}}</td>
+            <td>{{s.password}}</td>
+            <td><button (click)="editdata(s.email)">Edit</button></td>
+            <td><button (click)="delete1(s.id)">Delete</button></td>
+        </tr>
+    </table>
+
+</div>

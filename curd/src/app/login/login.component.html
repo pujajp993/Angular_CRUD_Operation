@@ -1,0 +1,8 @@
+<div class="container">
+    <form #loginform=ngForm (ngSubmit)="logdata(loginform.value)">
+        Email:<input type="text" name="email" ngModel><br>
+        Password:<input type="text" name="password" ngModel><br>
+        <input type="submit" value="Login">
+    </form>
+
+</div>
